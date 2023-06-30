@@ -32,7 +32,7 @@ const controlRecipes = async function () {
     //2) RENDERING RECIPE
     recipeView.render(model.state.recipe);
   } catch (err) {
-    console.log(err.message);
+    // console.log(err.message);
     recipeView.renderError();
   }
 };
@@ -53,7 +53,7 @@ const controlSearchResults = async function () {
     //4 render inital pagination buttons
     paginationView.render(model.state.search);
   } catch (err) {
-    console.log(err);
+    //console.log(err);
   }
 };
 
@@ -94,7 +94,7 @@ const controlAddRecipe = async function (newRecipe) {
 
     //upload
     await model.uploadRecipe(newRecipe);
-    console.log(model.state.recipe);
+    //console.log(model.state.recipe);
 
     //render
     recipeView.render(model.state.recipe);
