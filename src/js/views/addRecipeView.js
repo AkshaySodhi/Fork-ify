@@ -35,6 +35,7 @@ class AddRecipeView extends View {
       //ES 2019
       const data = Object.fromEntries(dataArr);
       handler(data);
+      console.log(this);
     });
   }
 
